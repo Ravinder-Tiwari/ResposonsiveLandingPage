@@ -26,16 +26,16 @@ const Section1 = () => {
 
     return (
 
-        <div className='text-white'>
-            <div className="h-160 w-full bg-top relative" style={{ backgroundImage: `url(${bg})` }}>
-                <h1 className='text-[60px] md:text-[8vw] uppercase absolute bottom-1/3 left-3/25'>Design</h1>
-                <h1 className='text-[60px] md:text-[8vw] uppercase absolute bottom-1/8 left-3/15'>&Freedom</h1>
+        <div className='text-white h-auto'>
+            <div className="h-[40vh] w-full bg-top relative md:h-[70vh] "  style={{ backgroundImage: `url(${bg})` }}>
+                <h1 className='text-[5vh] md:text-[10vw] uppercase absolute bottom-1/3 left-3/25 sm:text-[7vh]'>Design</h1>
+                <h1 className='text-[5vh] md:text-[10vw] uppercase absolute bottom-1/8 left-3/15 sm:text-[7vh]'>&Freedom</h1>
             </div>
-            <div className='flex gap-4 mt-4 px-4 mx-5 h-70'>
+            <div className='flex gap-4 mt-4 px-0 mx-2 justify-center pb-4 flex-wrap md:flex'>
                 {cardsData.map(function (card,idx) {
-                    return (<div key = {idx} className="p-10 flex flex-col gap-4 h-60 rounded-md bg-[#1E1E1E]">
-                        <h4 >{card.title}</h4>
-                        <p className='text-sm text-[#a1a1a1]'>{card.description}</p>
+                    return (<div key = {idx} className="p-10  flex flex-col gap-4   sm:w-170 h-60 rounded-md bg-[#1E1E1E] lg:w-100">
+                        <h4 className='text-3xl md:text-md'>{card.title}</h4>
+                        <p className='text-xl text-[#a1a1a1] md:text-md'>{card.description}</p>
                         <h5>{card.p}</h5>
                     </div>);
                 })}

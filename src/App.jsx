@@ -4,7 +4,7 @@ import Section from './components/Section'
 const App = () => {
   
   return (
-    <div className='w-full bg-[#0E0E0E]'>
+    <div className=' min-w-full bg-[#0E0E0E]'>
       <Nav />
       <Section />
     </div>

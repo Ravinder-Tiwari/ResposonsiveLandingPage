@@ -4,7 +4,7 @@ import Section2 from './Section2.jsx';
 
 const Section = () => {
   return (
-    <div className='overflow-x-hidden w-full'>
+    <div className=' w-full'>
        <Section1 />
        <Section2 />
     </div>
